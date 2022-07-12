@@ -7,4 +7,4 @@ export const AnimalCard = () => (
         <div className="animal__breed">Breed: Poodle</div>
         
     </section>
-)
+);

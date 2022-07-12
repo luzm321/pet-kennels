@@ -5,4 +5,4 @@ export const Location = () => (
         <h3 className="location__name">Nashville North</h3>
         <div className="location__address">500 Pet Avenue</div>     
     </section>
-)
+);
