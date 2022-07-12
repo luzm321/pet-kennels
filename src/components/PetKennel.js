@@ -1,6 +1,7 @@
 //import React from "react"
 import { AnimalCard } from "./animals/AnimalCard";
 import { Location } from "./locations/Location";
+import { Employee } from "./employees/Employee";
 import "./PetKennel.css"
 
 export const PetKennel = () => (
@@ -17,6 +18,13 @@ export const PetKennel = () => (
             <AnimalCard />
             <AnimalCard />
             <AnimalCard />
+        </article>
+
+        <h2>Employees</h2>
+        <article className="employees">
+            <Employee />
+            <Employee />
+            <Employee />
         </article>
 
         <h2>Locations</h2>
