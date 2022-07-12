@@ -3,6 +3,7 @@ import { AnimalCard } from "./animals/AnimalCard";
 import { Location } from "./locations/Location";
 import { Employee } from "./employees/Employee";
 import { Customer } from "./customers/Customer";
+import { WelcomeUser } from "./WelcomeUser";
 import "./PetKennel.css"
 
 export const PetKennel = () => (
@@ -13,6 +14,8 @@ export const PetKennel = () => (
             <div>Visit Us at the Nashville East Location</div>
             <div>2121 Puppy Way</div>
         </address>
+
+        <WelcomeUser userName="Luz" />
 
         <h2>Animals</h2>
         <article className="animals">
