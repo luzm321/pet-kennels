@@ -2,6 +2,7 @@
 import { AnimalCard } from "./animals/AnimalCard";
 import { Location } from "./locations/Location";
 import { Employee } from "./employees/Employee";
+import { Customer } from "./customers/Customer";
 import "./PetKennel.css"
 
 export const PetKennel = () => (
@@ -31,6 +32,14 @@ export const PetKennel = () => (
         <article className="locations">
             <Location />
             <Location />
+        </article>
+
+        <h2>Customers</h2>
+        <article className="customers">
+            <Customer />
+            <Customer />
+            <Customer />
+            <Customer />
         </article>
     </>
 );

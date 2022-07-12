@@ -5,4 +5,4 @@ export const Employee = () => (
         <h3 className="employee__name">Stephen Strange</h3>
         <div className="employee__location">Nashville North</div>     
     </section>
-)
+);
