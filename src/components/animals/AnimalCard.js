@@ -1,14 +1,12 @@
 import "./Animal.css"
 
-export const AnimalCard = () => (
+export const AnimalCard = ({ animal }) => (
     <>
-        <h2>Animals</h2>
-        <article className="animals">
-            <section className="animal">
-                <h3 className="animal__name">Doodles</h3>
-                <div className="animal__species">Species: Dog</div>
-                <div className="animal__breed">Breed: Poodle</div>
-            </section>
-        </article>
+        <section className="animal">
+            <h3 className="animal__name">{animal.name}</h3>
+            <div className="animal__species">Species: {animal.species}</div>
+            <div className="animal__breed">Breed: {animal.breed}</div>
+            <address className="location__address">{animal.location.name}</address>
+        </section>
     </>
 );
