@@ -11,3 +11,9 @@
     padding: 1em;
     border: 1px solid rgb(76, 132, 175);
 }
+
+.customer__header {
+    margin: 2em auto;
+    font-size: 30px;
+    text-align: center;
+}

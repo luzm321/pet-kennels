@@ -4,8 +4,10 @@ import { AnimalProvider } from "./animals/AnimalProvider";
 import { AnimalList } from "./animals/AnimalList";
 import { LocationProvider } from "./locations/LocationProvider";
 import { LocationList } from "./locations/LocationList";
+import { CustomerProvider } from "./customers/CustomerProvider";
+import { CustomerList } from "./customers/CustomerList";
 import { Employee } from "./employees/Employee";
-import { Customer } from "./customers/Customer";
+
 
 export const ApplicationViews = () => {
     return (
@@ -21,18 +23,21 @@ export const ApplicationViews = () => {
             </AnimalProvider>
 
             <LocationProvider>
-            <Routes>
-                <Route path="/locations"  element={<LocationList />} />
-            </Routes>
+                <Routes>
+                    <Route path="/locations"  element={<LocationList />} />
+                </Routes>
             </LocationProvider>
 
-            <Routes>
-                <Route path="/employees"  element={<Employee />} />
-            </Routes>
-            <Routes>
-                <Route path="/customers"  element={<Customer />} />
-            </Routes>
             
+                <Routes>
+                    <Route path="/employees"  element={<Employee />} />
+                </Routes>
+            
+            <CustomerProvider>
+            <Routes>
+                <Route path="/customers"  element={<CustomerList />} />
+            </Routes>
+            </CustomerProvider>           
         </>
     )
 };
