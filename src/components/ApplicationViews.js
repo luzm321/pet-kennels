@@ -6,7 +6,8 @@ import { LocationProvider } from "./locations/LocationProvider";
 import { LocationList } from "./locations/LocationList";
 import { CustomerProvider } from "./customers/CustomerProvider";
 import { CustomerList } from "./customers/CustomerList";
-import { Employee } from "./employees/Employee";
+import { EmployeeProvider } from "./employees/EmployeeProvider";
+import { EmployeeList } from "./employees/EmployeeList";
 
 
 export const ApplicationViews = () => {
@@ -28,10 +29,11 @@ export const ApplicationViews = () => {
                 </Routes>
             </LocationProvider>
 
-            
+            <EmployeeProvider>
                 <Routes>
-                    <Route path="/employees"  element={<Employee />} />
+                    <Route path="/employees"  element={<EmployeeList />} />
                 </Routes>
+            </EmployeeProvider>
             
             <CustomerProvider>
             <Routes>

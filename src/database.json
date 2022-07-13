@@ -63,18 +63,18 @@
         },
         {
             "id": 2,
-            "name": "Stephen Strange",
+            "name": "Loki Odinson",
             "locationId": 2
         },
         {
             "id": 3,
-            "name": "Stephen Strange",
+            "name": "Thor Odinson",
             "locationId": 1
         },
         {
             "id": 4,
-            "name": "Stephen Strange",
-            "locationId": 1
+            "name": "Carol Danvers",
+            "locationId": 2
         }
     ],
     "locations": [
