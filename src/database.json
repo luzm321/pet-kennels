@@ -83,6 +83,11 @@
       "id": 4,
       "name": "Carol Danvers",
       "locationId": 2
+    },
+    {
+      "name": "Gamora",
+      "locationId": 2,
+      "id": 5
     }
   ],
   "locations": [
