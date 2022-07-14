@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { LocationContext } from "./LocationProvider";
 import { Location } from "./Location";
+import { useNavigate } from "react-router-dom";
 import "./Location.css";
 
 export const LocationList = () => {
@@ -13,10 +14,14 @@ export const LocationList = () => {
     getLocations()
   }, []);
 
+  const navigate = useNavigate();
 
   return (
     <>
         <h2 className="location__header">Locations</h2>
+        <button onClick={() => navigate("/locations/create")}>
+          Add Location
+        </button>
         <div className="locations">
         {console.log("LocationList: Render", locations)}
         {
