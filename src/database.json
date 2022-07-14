@@ -1,92 +1,100 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "species": "Dog",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Whiskers",
-            "species": "Cat",
-            "breed": "Munchkin",
-            "customerId": 3,
-            "locationId": 1
-        },
-        {
-            "id": 3,
-            "name": "Pancham",
-            "species": "Panda",
-            "breed": "Giant Panda",
-            "customerId": 2,
-            "locationId": 1
-        },
-        {
-            "id": 4,
-            "name": "Piplup",
-            "species": "Penguin",
-            "breed": "Emperor",
-            "customerId": 4,
-            "locationId": 2
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Steve Rogers",
-            "address": "300 Infinity Way"
-        },
-        {
-            "id": 2,
-            "name": "Wanda Maximoff",
-            "address": "100 Vision Avenue"
-        },
-        {
-            "id": 3,
-            "name": "Natasha Romanoff",
-            "address": "425 Assassin Street"
-        },
-        {
-            "id": 4,
-            "name": "Marc Spector",
-            "address": "800 Moon Knight Blvd"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Stephen Strange",
-            "locationId": 1
-        },
-        {
-            "id": 2,
-            "name": "Loki Odinson",
-            "locationId": 2
-        },
-        {
-            "id": 3,
-            "name": "Thor Odinson",
-            "locationId": 1
-        },
-        {
-            "id": 4,
-            "name": "Carol Danvers",
-            "locationId": 2
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "500 Pet Avenue"
-        },
-        {
-            "id": 2,
-            "name": "Nashville East",
-            "address": "2121 Puppy Way"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "species": "Dog",
+      "breed": "Poodle",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Whiskers",
+      "species": "Cat",
+      "breed": "Munchkin",
+      "customerId": 3,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Pancham",
+      "species": "Panda",
+      "breed": "Giant Panda",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Piplup",
+      "species": "Penguin",
+      "breed": "Emperor",
+      "customerId": 4,
+      "locationId": 2
+    },
+    {
+      "name": "Bubbles",
+      "species": "Dog",
+      "breed": "Alaskan Malamute",
+      "locationId": 1,
+      "customerId": 1,
+      "id": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Steve Rogers",
+      "address": "300 Infinity Way"
+    },
+    {
+      "id": 2,
+      "name": "Wanda Maximoff",
+      "address": "100 Vision Avenue"
+    },
+    {
+      "id": 3,
+      "name": "Natasha Romanoff",
+      "address": "425 Assassin Street"
+    },
+    {
+      "id": 4,
+      "name": "Marc Spector",
+      "address": "800 Moon Knight Blvd"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Stephen Strange",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Loki Odinson",
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "Thor Odinson",
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Carol Danvers",
+      "locationId": 2
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Pet Avenue"
+    },
+    {
+      "id": 2,
+      "name": "Nashville East",
+      "address": "2121 Puppy Way"
+    }
+  ]
 }
