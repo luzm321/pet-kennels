@@ -79,6 +79,9 @@ export const EmployeeForm = () => {
       <button className="btn btn-primary" onClick={handleClickSaveEmployee}>
         Save Employee
       </button>
+      <button onClick={() => {navigate("/employees")}}>
+        Cancel
+      </button>
     </form>
   )
 };

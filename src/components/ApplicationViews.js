@@ -8,6 +8,7 @@ import { LocationList } from "./locations/LocationList";
 import { LocationForm } from "./locations/LocationForm";
 import { CustomerProvider } from "./customers/CustomerProvider";
 import { CustomerList } from "./customers/CustomerList";
+import { CustomerForm } from "./customers/CustomerForm";
 import { EmployeeProvider } from "./employees/EmployeeProvider";
 import { EmployeeList } from "./employees/EmployeeList";
 import { EmployeeForm } from "./employees/EmployeeForm";
@@ -54,9 +55,12 @@ export const ApplicationViews = () => {
             </EmployeeProvider>
             
             <CustomerProvider>
-            <Routes>
-                <Route path="/customers"  element={<CustomerList />} />
-            </Routes>
+                <Routes>
+                    <Route path="/customers"  element={<CustomerList />} />
+                </Routes>
+                <Routes>
+                    <Route path="/customers/create"  element={<CustomerForm />} />
+                </Routes>
             </CustomerProvider>           
         </>
     )

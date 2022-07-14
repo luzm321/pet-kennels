@@ -113,6 +113,9 @@ export const AnimalForm = () => {
       <button className="btn btn-primary" onClick={handleClickSaveAnimal}>
         Save Animal
       </button>
+      <button onClick={() => {navigate("/animals")}}>
+        Cancel
+      </button>
     </form>
   )
 };

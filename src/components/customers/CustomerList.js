@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { CustomerContext } from "./CustomerProvider";
 import { Customer } from "./Customer";
+import { useNavigate } from "react-router-dom";
 import "./Customer.css";
 
 export const CustomerList = () => {
@@ -12,9 +13,14 @@ export const CustomerList = () => {
   }, []);
 
 
+  const navigate = useNavigate();
+
   return (
     <>
         <h2 className="customer__header">Customers</h2>
+        <button onClick={() => {navigate("/customers/create")}}>
+          Add Customer
+        </button>
         <div className="customers">
         {
             customers.map(customer => {
