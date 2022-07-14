@@ -52,6 +52,9 @@ export const LocationForm = () => {
       <button className="btn btn-primary" onClick={handleClickSaveLocation}>
         Save Location
       </button>
+      <button onClick={() => {navigate("/locations")}}>
+        Cancel
+      </button>
     </form>
   )
 };
