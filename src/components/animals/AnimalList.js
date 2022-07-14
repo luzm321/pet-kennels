@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useHistory } from "react";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; //replaces useHistory in react-router-dom v6
 import { AnimalContext } from "./AnimalProvider";
 import { AnimalCard } from "./AnimalCard";
 // import { LocationContext } from "../locations/LocationProvider";
@@ -10,7 +11,6 @@ export const AnimalList = () => {
   const { animals, getAnimals } = useContext(AnimalContext)
   // const { locations, getLocations } = useContext(LocationContext)
   // const { customers, getCustomers } = useContext(CustomerContext)
-  //const history = useHistory();
 
   //useEffect - reach out to the world for something
   useEffect(() => {
@@ -20,13 +20,14 @@ export const AnimalList = () => {
     // .then(getCustomers)
   }, []);
 
+  const navigate = useNavigate();
 
   return (
     <>
         <h2 className="animal__header">Animals</h2>
-        {/* <button onClick={() => {history.push("/animals/create")}}>
+        <button onClick={() => {navigate("/animals/create")}}>
             Add Animal
-        </button> */}
+        </button>
         <div className="animals">
         {console.log("AnimalList: Render", animals)}
         {
