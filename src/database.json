@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "captainamerica",
+      "password": "avengers"
+    }
+  ],
   "animals": [
     {
       "id": 1,
