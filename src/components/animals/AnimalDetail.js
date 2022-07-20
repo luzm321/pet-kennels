@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react"
 import { AnimalContext } from "./AnimalProvider"
 import "./Animal.css"
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 
 export const AnimalDetail = () => {
-  const { getAnimalById } = useContext(AnimalContext)
+  const { getAnimalById, releaseAnimal } = useContext(AnimalContext)
 
 	const [animal, setAnimal] = useState({})
 
@@ -18,6 +18,15 @@ export const AnimalDetail = () => {
     })
   }, [])
 
+  const navigate = useNavigate();
+
+  const handleRelease = () => {
+    releaseAnimal(animal.id)
+      .then(() => {
+        navigate("/animals")
+      })
+  }
+
   return (
     <section className="animal">
       <h3 className="animal__name">{animal.name}</h3>
@@ -25,6 +34,7 @@ export const AnimalDetail = () => {
       <div className="animal__breed">Breed: {animal.breed}</div>
       <div className="animal__location">Location: {animal.location?.name}</div>
       <div className="animal__owner">Customer: {animal.customer?.name}</div>
+      <button onClick={handleRelease}>Release Animal</button>
     </section>
   )
 };
