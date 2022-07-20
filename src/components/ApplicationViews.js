@@ -10,6 +10,7 @@ import { LocationForm } from "./locations/LocationForm";
 import { CustomerProvider } from "./customers/CustomerProvider";
 import { CustomerList } from "./customers/CustomerList";
 import { CustomerForm } from "./customers/CustomerForm";
+import { CustomerDetail } from "./customers/CustomerDetail";
 import { EmployeeProvider } from "./employees/EmployeeProvider";
 import { EmployeeList } from "./employees/EmployeeList";
 import { EmployeeForm } from "./employees/EmployeeForm";
@@ -70,6 +71,9 @@ export const ApplicationViews = () => {
                 </Routes>
                 <Routes>
                     <Route path="/customers/create"  element={<CustomerForm />} />
+                </Routes>
+                <Routes>
+                    <Route exact path="/customers/detail/:customerId" element={<CustomerDetail />} />
                 </Routes>
             </CustomerProvider>           
         </>
