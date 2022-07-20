@@ -38,6 +38,14 @@
       "breed": "Emperor",
       "customerId": 4,
       "locationId": 2
+    },
+    {
+      "id": 5,
+      "name": "Bubbles",
+      "species": "Dog",
+      "breed": "Alaskan Malamute",
+      "locationId": 3,
+      "customerId": 4
     }
   ],
   "customers": [
