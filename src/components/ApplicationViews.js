@@ -3,6 +3,7 @@ import { Home } from "./home/Home";
 import { AnimalProvider } from "./animals/AnimalProvider";
 import { AnimalList } from "./animals/AnimalList";
 import { AnimalForm } from "./animals/AnimalForm";
+import { AnimalDetail } from "./animals/AnimalDetail";
 import { LocationProvider } from "./locations/LocationProvider";
 import { LocationList } from "./locations/LocationList";
 import { LocationForm } from "./locations/LocationForm";
@@ -12,7 +13,9 @@ import { CustomerForm } from "./customers/CustomerForm";
 import { EmployeeProvider } from "./employees/EmployeeProvider";
 import { EmployeeList } from "./employees/EmployeeList";
 import { EmployeeForm } from "./employees/EmployeeForm";
-import { AnimalDetail } from "./animals/AnimalDetail";
+import { EmployeeDetail } from "./employees/EmployeeDetail";
+
+
 
 
 export const ApplicationViews = () => {
@@ -54,6 +57,9 @@ export const ApplicationViews = () => {
                     </Routes>
                     <Routes>
                         <Route path="/employees/create"  element={<EmployeeForm />} />
+                    </Routes>
+                    <Routes>
+                        <Route exact path="/employees/detail/:employeeId" element={<EmployeeDetail />} />
                     </Routes>
                 </LocationProvider>
             </EmployeeProvider>
