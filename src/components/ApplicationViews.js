@@ -7,6 +7,7 @@ import { AnimalDetail } from "./animals/AnimalDetail";
 import { LocationProvider } from "./locations/LocationProvider";
 import { LocationList } from "./locations/LocationList";
 import { LocationForm } from "./locations/LocationForm";
+import { LocationDetail } from "./locations/LocationDetail";
 import { CustomerProvider } from "./customers/CustomerProvider";
 import { CustomerList } from "./customers/CustomerList";
 import { CustomerForm } from "./customers/CustomerForm";
@@ -48,6 +49,9 @@ export const ApplicationViews = () => {
                 </Routes>
                 <Routes>
                     <Route path="/locations/create"  element={<LocationForm />} />
+                </Routes>
+                <Routes>
+                    <Route exact path="/locations/detail/:locationId" element={<LocationDetail />} />
                 </Routes>
             </LocationProvider>
 
